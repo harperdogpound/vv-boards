@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow">
+<title>GREEN AGE Sheet Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#101216;--panel:#181b21;--line:#2a2f38;--ink:#eceef2;--mute:#9aa3b1;--acc:#b6ff1a;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,sans-serif;margin:0;padding-inline:16px;padding-block:28px 80px}
+main{max-width:1180px;margin:0 auto;display:grid;gap:36px}
+h1{font:400 clamp(48px,9vw,104px)/.95 Anton,Impact,sans-serif;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1 small{display:block;font:500 13px/1.4 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:10px}
+h2{font:400 30px/1 Anton,Impact,sans-serif;letter-spacing:.02em;margin:0 0 14px;text-transform:uppercase}
+p{margin:0;max-width:72ch;color:var(--mute)}
+.lede{display:grid;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:5px 10px 5px 6px;font-size:13px}
+.chip i{width:18px;height:18px;display:inline-block;border:1px solid #0006}
+code,pre,dt{font-family:"IBM Plex Mono",ui-monospace,monospace}
+code{color:var(--mute);font-size:12px}
+.rules{border-left:3px solid var(--acc);padding:4px 0 4px 16px;display:grid;gap:6px}
+.rules pre{margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:14px}
+.sheet{background:var(--panel);border:1px solid var(--line);padding:14px;display:grid;gap:10px;align-content:start}
+.sheet header{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.sheet header b{font:400 22px Anton,Impact,sans-serif;color:var(--acc)}
+.sheet header span{font-weight:600;flex:1}
+.done{font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;margin:0;font-size:13px}
+dt{color:var(--mute);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}
+dd{margin:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b0d10;border:1px solid var(--line);padding:10px;margin:0;font-size:12.5px;line-height:1.5;max-height:360px;overflow:auto}
+.refs{display:flex;flex-wrap:wrap;gap:8px}
+.refs figure{margin:0;width:calc(33% - 6px);min-width:96px}
+.refs figcaption{font-size:11px;color:var(--mute);margin-top:4px}
+.refs img{width:100%;height:auto;display:block;border:1px solid var(--line);cursor:grab}
+.refs figcaption{font:500 10.5px "IBM Plex Mono",monospace;color:var(--mute);word-break:break-all;margin-top:3px}
+button.copy{justify-self:start;background:var(--acc);color:#0b0d10;border:0;padding:7px 14px;font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer}
+button.copy:focus-visible,input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+ol{margin:0;padding-left:20px;display:grid;gap:4px}
+.meta{font:500 12px "IBM Plex Mono",monospace;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+</style>
+</head><body><main>
+<div class="lede"><h1><small>Vero Vendetta · painted Beech look</small>GREEN AGE</h1>
+<p>One neon-green night in a Chinese city: she wakes upside down on an unmade bed, draws on a cigarette, eats cereal, laces her sneakers, points a pistol at her own reflection and smiles, then drifts a lime Evo IX through the neon streets and flyover loops until the sky turns grey.</p><div class="chips"><span class="chip"><i style="background:#b6ff1a"></i>acid lime <code>#b6ff1a</code></span><span class="chip"><i style="background:#1fae5b"></i>toxic green <code>#1fae5b</code></span><span class="chip"><i style="background:#0d2b22"></i>deep jade <code>#0d2b22</code></span><span class="chip"><i style="background:#070a08"></i>near-black <code>#070a08</code></span><span class="chip"><i style="background:#e8f0e6"></i>pale neon white <code>#e8f0e6</code></span><span class="chip"><i style="background:#d62d2d"></i>lantern red <code>#d62d2d</code></span></div><p>Night world. Acid lime and toxic green neon are the light, deep jade-black is the dark. Red only on lanterns, one per location. Her green hair and nails and the lime Evo are the only saturated objects. The palette sets light and grade, it never recolours clothes or the car.</p></div>
+<section class="rules"><h2>Run order</h2><ol>
+<li>Run top to bottom: character, then vehicle, then props, then places. Every prompt is text only: no links, no --sref.</li>
+<li>Each card says what you attach: the Style ref and the Image prompt. Drag the pictured refs into MJ's Image prompt section.</li>
+<li>S01 runs first. Once it has a winner, that winner goes wherever a card says "S01 winner".</li>
+<li>Save each winner as mj/S01.png, mj/S02.png … in the reel folder, or drop them in chat.</li>
+</ol></section>
+<section><h2>Character</h2><div class="grid"><article class="sheet" id="S01">
+  <header><b>S01</b><span>Character turnaround</span><label class="done"><input type="checkbox" id="done-S01"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>none, this one runs first</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — character design sheet, one woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails, shown three times side by side, full body front view, side view and back view, oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over the shoes, chunky black and lime skate sneakers, a thin silver chain necklace, silver rings, standing calm and unbothered, head-to-toe outfit view, plain flat pale grey background, clothing identical in every view, no text --no photo, photoreal, realistic skin --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S02">
+  <header><b>S02</b><span>Head study</span><label class="done"><input type="checkbox" id="done-S02"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — head study sheet, the same woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails, shown three times, front view, three-quarter view, profile, the white tee collar at the neck, half-lidded unbothered look, plain flat pale grey background, no text --no photo, photoreal, realistic skin --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S03">
+  <header><b>S03</b><span>Hands, nails, props</span><label class="done"><input type="checkbox" id="done-S03"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — detail sheet, close views on a plain flat pale grey background: a hand with long coffin-shaped acid lime green acrylic nails and silver rings, a battered silver flip-top lighter, a black compact pistol lying flat, a car key on a lime green lanyard, the chunky black and lime skate sneakers as a pair, no text --no photo, photoreal, realistic skin --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article></div></section><section><h2>Vehicle</h2><div class="grid"><article class="sheet" id="S04">
+  <header><b>S04</b><span>Evo IX turnaround</span><label class="done"><input type="checkbox" id="done-S04"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>you attach: CAR_evo9_lime.png</dd></dl>
+  <div class="refs"><figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3GCVs2KN043ydbfoRxoZz4tGjmj/e743cbe2-97b3-498d-8362-ffcbfae1f1d2.png" alt="CAR_evo9_lime.png" loading="lazy"><figcaption>CAR_evo9_lime.png</figcaption></figure></div><pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — vehicle design sheet, a Mitsubishi Lancer Evolution IX in bright acid lime green, black carbon vented bonnet, deep black front splitter with canards, widebody fender flares, tall swan-neck GT wing with black uprights, black deep-dish multi-spoke wheels, black rear diffuser, dark tinted windows, slammed stance, shown from four angles side by side, front three-quarter, side profile, rear three-quarter, straight rear, blank number plate, no badges, no lettering, plain flat pale grey background --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S05">
+  <header><b>S05</b><span>Interior</span><label class="done"><input type="checkbox" id="done-S05"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>you attach: CAR_evo9_lime.png</dd></dl>
+  <div class="refs"><figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3GCVs2KN043ydbfoRxoZz4tGjmj/e743cbe2-97b3-498d-8362-ffcbfae1f1d2.png" alt="CAR_evo9_lime.png" loading="lazy"><figcaption>CAR_evo9_lime.png</figcaption></figure></div><pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — interior design sheet, driver&#x27;s cabin of a Mitsubishi Lancer Evolution IX shown from two views, from the passenger seat and from the rear seat looking forward, black Recaro bucket seats with lime green stitching, black dashboard, three-spoke black steering wheel, short gear lever, rear-view mirror, pale grey nothing outside the windows, no text --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S06">
+  <header><b>S06</b><span>Wheel and wing details</span><label class="done"><input type="checkbox" id="done-S06"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>you attach: CAR_evo9_lime.png</dd></dl>
+  <div class="refs"><figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3GCVs2KN043ydbfoRxoZz4tGjmj/e743cbe2-97b3-498d-8362-ffcbfae1f1d2.png" alt="CAR_evo9_lime.png" loading="lazy"><figcaption>CAR_evo9_lime.png</figcaption></figure></div><pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — detail sheet, two close views of a bright acid lime green Mitsubishi Lancer Evolution IX, a front wheel with a black deep-dish multi-spoke rim, a gold brake caliper and drilled disc under a widebody flare, and the tall swan-neck GT wing with black uprights on the boot lid, plain flat pale grey background, no text --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article></div></section><section><h2>Places</h2><div class="grid"><article class="sheet" id="S07">
+  <header><b>S07</b><span>Bedroom from above</span><label class="done"><input type="checkbox" id="done-S07"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — straight-down overhead view of an unmade double bed in a small high-rise bedroom at night, rumpled white sheets and pillows, a black ashtray and a silver lighter on the side table, a pair of chunky sneakers on the floor, acid green neon light falling across the sheets through blinds, empty, no people --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S08">
+  <header><b>S08</b><span>Kitchen counter</span><label class="done"><input type="checkbox" id="done-S08"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — wide view of a small high-rise kitchen at night, a narrow counter with a bowl, a spoon and a carton of milk, a tall window behind showing green neon towers and a lit flyover, an old fridge covered in stickers, a single bare bulb, acid green neon spill on the counter, empty, no people --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S09">
+  <header><b>S09</b><span>Hallway mirror</span><label class="done"><input type="checkbox" id="done-S09"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — view into a narrow apartment hallway at night, a tall full-length mirror on the wall reflecting the empty hallway, a stack of shoe boxes and a shoe rack below it, the front door with a chain lock, a red paper lantern hanging from the ceiling, acid green neon through a small window, empty, no people --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S10">
+  <header><b>S10</b><span>Neon car park</span><label class="done"><input type="checkbox" id="done-S10"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — low road-level view across an underground concrete car park at night, acid green fluorescent tubes along the low ceiling, painted bay lines, a ramp curving up and out to the street, a red fire hose cabinet on a pillar, wet floor reflecting green, empty, no people, no cars --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S11">
+  <header><b>S11</b><span>Narrow neon street</span><label class="done"><input type="checkbox" id="done-S11"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — road-level view down a narrow street in a dense Chinese city at night, tall shophouse buildings, stacked acid green neon sign shapes and glowing tubes overhanging the road, air-conditioner units, a single red lantern, wet asphalt reflecting the green, steam rising from a drain, empty road, no people, no cars --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S12">
+  <header><b>S12</b><span>Lantern market crossroads</span><label class="done"><input type="checkbox" id="done-S12"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — high wide view of a crossroads in a Chinese night market, rows of red lanterns strung across the street, food stalls with green neon tubes and plastic stools, a few pedestrians at the stalls, a wet road junction in the middle, empty road --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S13">
+  <header><b>S13</b><span>Flyover interchange</span><label class="done"><input type="checkbox" id="done-S13"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — high aerial view of a looping elevated flyover interchange between dense high-rise towers at night, four curving concrete ramps stacked over each other, acid green neon along the tower faces, a few red lights, wet road surface, empty roads --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S14">
+  <header><b>S14</b><span>Under the flyover</span><label class="done"><input type="checkbox" id="done-S14"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — low road-level view under an elevated flyover at night, thick concrete pillars stretching into the distance, acid green neon strips on the pillars, a red lantern on a closed noodle stall, puddles reflecting green, empty road, no people, no cars --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article><article class="sheet" id="S15">
+  <header><b>S15</b><span>Rooftop car park</span><label class="done"><input type="checkbox" id="done-S15"> winner in</label></header>
+  <dl><dt>Style ref</dt><dd>S01 winner, you attach it</dd><dt>Image prompt</dt><dd>none</dd></dl>
+  <pre>Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy — wide view of an open rooftop car park at the top of a tower at blue-grey dawn, the neon city skyline below, painted bay lines, a low concrete wall with a steel rail, a vending machine glowing green, a lone red lantern on a stairwell door, empty, no people, no cars --v 8.2 --hd --s 350 --ar 16:9</pre><button class="copy">Copy prompt</button></article></div></section>
+<section><h2>Acts</h2><ol><li>M1 The flat: upside-down on the unmade bed drawing on a cigarette (the ref angle), cereal at the counter, lacing the sneakers, pistol at the mirror and a smile (S07, S08, S09, S02, S03).</li><li>M2 Ignition: the neon car park, keys, the Evo wakes and rolls out (S10, S04, S05, S03).</li><li>M3 Neon street: drifting the narrow green-neon street and the lantern market crossroads (S11, S12, S06).</li><li>M4 The loop: flyover interchange drifts between towers, under the pillars (S13, S14, S06).</li><li>M5 Tag: rooftop car park above the skyline, engine ticking, the sky going grey (S15, S02).</li></ol></section>
+<section><h2>GPT Image 2 pass</h2><p class="meta">gpt_image_2 · quality high · resolution 2k · image 2 = palette swatch</p><pre>Image 1 is the Character turnaround sheet from the GREEN AGE reel. Redraw image 1 as Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. Keep the exact same layout, composition, subject and camera. The palette sets light and grade only: keep every garment, hair, nail, car paint and object colour exactly as drawn. Keep the lime green hair, lime nails and the black tribal flame graphic on the white tee exactly as drawn. Remove all text, lettering and watermarks.</pre></section>
+<section><h2>Seedance montages</h2><p class="meta">seedance_2_5 · omni_reference · 15s · 720p · 16:9 · audio on · no start frames · breadth first</p><div class="grid"><article class="sheet"><header><b>M1</b><span>The flat</span></header>
+  <dl><dt>Refs</dt><dd>@image1 = S01 · @image2 = S07 · @image3 = S08 · @image4 = S09 · @image5 = S02 · @image6 = S03</dd></dl>
+  <pre>SHOT: The flat. Night in a high-rise, green neon through the blinds. She wakes, smokes, eats, laces up, and smiles at her own reflection down a pistol.
+REFERENCES: @image1 is the character sheet. @image2 is the bedroom from above. @image3 is the kitchen. @image4 is the hallway mirror. @image5 is the head sheet. @image6 is the hands, nails and props sheet.
+
+CHARACTER @image1
+A woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails. Oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over chunky black and lime skate sneakers, a thin silver chain, silver rings. Psychology: bored, certain, quietly amused. Acting intent: one unhurried movement per beat, a slow half-smile, never performs for the lens except through the mirror. Face locked, face stable throughout, no deformation. Clothing locked exactly as @image1.
+
+SETTING @image2 @image3 @image4
+Small high-rise flat at night anchored strictly to @image2, @image3 and @image4: the unmade bed with white sheets seen from straight above, the narrow kitchen counter with the window onto green neon towers, the hallway with the full-length mirror, shoe boxes and the red lantern. The only light is acid green neon through the windows and one bare bulb. Preserve layout exactly.
+
+CAMERA
+16:9, 24fps. Fast-cut montage. Multiple editorial shots per beat, wide against macro, tracking against static. Camera sharp and intentional. No long floaty movement. I am cutting this myself in the edit: load extra coverage, aggressive angles and options. Do not make a finished ad. No music.
+
+SEQUENCE
+[0s–3s] Straight-down overhead on the bed @image2: she lies on her back, head toward the bottom of the frame so her face reads upside down, green hair fanned over the white sheet. Her lime-nailed hand @image6 flicks the silver lighter, a small flame, she draws on a cigarette, haze curls up into the green light. Insert: the nails tapping ash into the ashtray. Sound: lighter flint, a slow breath, distant traffic.
+[3s–6s] Kitchen @image3: she stands at the counter, her hand pours milk into the bowl, she eats a spoonful of cereal looking out at the neon flyover. ECU: the spoon, the lime nails. Sound: milk pour, spoon on ceramic, crunch, fridge hum.
+[6s–9s] Hallway floor, low: her hands pull the chunky black and lime sneakers @image6 out of a shoe box, she pushes a foot in, her fingers pull the laces tight. Sound: cardboard lid, lace zip, a shoe tapping the floor.
+[9s–12s] Into the mirror @image4: her reflection lifts the black pistol @image6 level at the glass, her eyes @image5 hold steady, then a slow half-smile spreads. Both her hands stay on the pistol, no phone. Sound: a quiet slide click, her breath.
+[12s–15s] She lowers the pistol, grabs the key on the lime lanyard off the shoe boxes, the front door chain drops and the door swings shut behind her, the red lantern sways. Sound: keys jangle, chain rattle, door slam echo.
+
+STYLE PROMPT
+Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. 16:9, 15 seconds, 24fps. No music. Diegetic sound only. Face stable throughout, no deformation.
+
+NEGATIVE PROMPTS
+extra cars, second driver, extra people in the car, melted wheels, extra fingers, floaty camera drift, on-screen text, readable signage</pre><button class="copy">Copy prompt</button></article><article class="sheet"><header><b>M2</b><span>Ignition</span></header>
+  <dl><dt>Refs</dt><dd>@image1 = S01 · @image2 = S04 · @image3 = S05 · @image4 = S10 · @image5 = S03</dd></dl>
+  <pre>SHOT: Ignition. The neon car park under the tower; the Evo wakes and rolls out to the street.
+REFERENCES: @image1 is the character sheet. @image2 is the car four-angle sheet. @image3 is the car interior. @image4 is the neon car park. @image5 is the hands, nails and props sheet.
+
+CHARACTER @image1
+A woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails. Oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over chunky black and lime skate sneakers, a thin silver chain, silver rings. Psychology: bored, certain, quietly amused. Acting intent: one unhurried movement per beat, a slow half-smile, never performs for the lens except through the mirror. Face locked, face stable throughout, no deformation. Clothing locked exactly as @image1.
+
+VEHICLE @image2
+A Mitsubishi Lancer Evolution IX in bright acid lime green, black carbon vented bonnet, deep black front splitter with canards, widebody fender flares, tall swan-neck GT wing with black uprights, black deep-dish multi-spoke wheels, gold brake calipers, black rear diffuser, dark tinted windows, slammed stance, a red three-diamond emblem on the grille and boot lid, blank plates, no lettering, exactly as @image2. Only ever one car.
+
+SETTING @image4
+Underground concrete car park at night anchored strictly to @image4: acid green fluorescent tubes along the low ceiling, painted bay lines, the ramp curving up to the street, the red fire hose cabinet, wet floor reflecting green. Preserve layout exactly.
+
+CAMERA
+16:9, 24fps. Fast-cut montage. Multiple editorial shots per beat, wide against macro, tracking against static. Camera sharp and intentional. No long floaty movement. I am cutting this myself in the edit: load extra coverage, aggressive angles and options. Do not make a finished ad. No music.
+
+SEQUENCE
+[0s–3s] Low wide across the car park @image4: the lime Evo @image2 sits alone under the green tubes, one tube flickering. Her sneakers walk into frame toward it. Sound: footsteps echo in concrete, tube buzz.
+[3s–6s] Interior @image3: her lime-nailed hand @image5 turns the key, the dash wakes. ECU exhaust: the engine catches, a pop, a shiver of heat haze. Sound: key click, starter, engine barks and idles lumpy.
+[6s–9s] ECU wing mirror: her eyes glance once, then away. ECU front wheel: the black deep-dish wheel turns to full lock. Sound: rough idle, turbo flutter.
+[9s–12s] Ground level by the ramp: the Evo swings past the lens and up the ramp, the swan-neck wing passing through frame, green light sliding over the paint. Sound: revs climb, tyres squeal on painted concrete.
+[12s–15s] Rear tracking up the curve of the ramp into the street glow, tail lights smearing red. Sound: full engine pull, anti-lag crackle echoing.
+
+STYLE PROMPT
+Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. 16:9, 15 seconds, 24fps. No music. Diegetic sound only. Face stable throughout, no deformation.
+
+NEGATIVE PROMPTS
+extra cars, second driver, extra people in the car, melted wheels, extra fingers, floaty camera drift, on-screen text, readable signage</pre><button class="copy">Copy prompt</button></article><article class="sheet"><header><b>M3</b><span>Neon street</span></header>
+  <dl><dt>Refs</dt><dd>@image1 = S01 · @image2 = S04 · @image3 = S11 · @image4 = S12 · @image5 = S06</dd></dl>
+  <pre>SHOT: Neon street. The Evo drifts the narrow green-neon street and slides through the lantern market crossroads.
+REFERENCES: @image1 is the character sheet. @image2 is the car four-angle sheet. @image3 is the narrow neon street. @image4 is the lantern market crossroads. @image5 is the wheel and wing detail.
+
+CHARACTER @image1
+A woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails. Oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over chunky black and lime skate sneakers, a thin silver chain, silver rings. Psychology: bored, certain, quietly amused. Acting intent: one unhurried movement per beat, a slow half-smile, never performs for the lens except through the mirror. Face locked, face stable throughout, no deformation. Clothing locked exactly as @image1.
+
+VEHICLE @image2
+A Mitsubishi Lancer Evolution IX in bright acid lime green, black carbon vented bonnet, deep black front splitter with canards, widebody fender flares, tall swan-neck GT wing with black uprights, black deep-dish multi-spoke wheels, gold brake calipers, black rear diffuser, dark tinted windows, slammed stance, a red three-diamond emblem on the grille and boot lid, blank plates, no lettering, exactly as @image2. Only ever one car.
+
+SETTING @image3 @image4
+Dense Chinese city at night anchored strictly to @image3 and @image4: tall shophouses, stacked acid green neon sign shapes over the road, air-conditioner units, steam from a drain, wet asphalt; then the crossroads with rows of red lanterns, food stalls with green tubes, plastic stools and a few pedestrians. Preserve layout exactly.
+
+CAMERA
+16:9, 24fps. Fast-cut montage. Multiple editorial shots per beat, wide against macro, tracking against static. Camera sharp and intentional. No long floaty movement. I am cutting this myself in the edit: load extra coverage, aggressive angles and options. Do not make a finished ad. No music.
+
+SEQUENCE
+[0s–3s] Asphalt-level, the Evo @image2 comes down the narrow street @image3 straight at the lens, flicks sideways, smoke rolling off the rear tyres through the steam. Sound: engine echo between buildings, tyre scream.
+[3s–6s] Wheel-arch cam @image5: the front wheel at full opposite lock, gold caliper glimpsed, water spray at the lens. Sound: tyre scrub, spray hiss.
+[6s–9s] Interior insert: her lime-nailed hand yanks the handbrake, her other hand counter-steers. Sound: handbrake ratchet, revs spike.
+[9s–12s] High wide on the crossroads @image4: the Evo slides through the junction under the lanterns, a stall owner steps back, the lanterns sway in the wake. Sound: tyre squeal, stall pans clatter, crowd shout.
+[12s–15s] Low rear tracking: the GT wing fills the frame as the Evo straightens and pulls away down the street, smoke curling into the neon. Sound: full engine pull, anti-lag pops.
+
+STYLE PROMPT
+Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. 16:9, 15 seconds, 24fps. No music. Diegetic sound only. Face stable throughout, no deformation.
+
+NEGATIVE PROMPTS
+extra cars, second driver, extra people in the car, melted wheels, extra fingers, floaty camera drift, on-screen text, readable signage</pre><button class="copy">Copy prompt</button></article><article class="sheet"><header><b>M4</b><span>The loop</span></header>
+  <dl><dt>Refs</dt><dd>@image1 = S01 · @image2 = S04 · @image3 = S13 · @image4 = S14 · @image5 = S06</dd></dl>
+  <pre>SHOT: The loop. Drifting the stacked flyover ramps between towers, then flat out under the pillars.
+REFERENCES: @image1 is the character sheet. @image2 is the car four-angle sheet. @image3 is the flyover interchange. @image4 is under the flyover. @image5 is the wheel and wing detail.
+
+CHARACTER @image1
+A woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails. Oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over chunky black and lime skate sneakers, a thin silver chain, silver rings. Psychology: bored, certain, quietly amused. Acting intent: one unhurried movement per beat, a slow half-smile, never performs for the lens except through the mirror. Face locked, face stable throughout, no deformation. Clothing locked exactly as @image1.
+
+VEHICLE @image2
+A Mitsubishi Lancer Evolution IX in bright acid lime green, black carbon vented bonnet, deep black front splitter with canards, widebody fender flares, tall swan-neck GT wing with black uprights, black deep-dish multi-spoke wheels, gold brake calipers, black rear diffuser, dark tinted windows, slammed stance, a red three-diamond emblem on the grille and boot lid, blank plates, no lettering, exactly as @image2. Only ever one car.
+
+SETTING @image3 @image4
+Looping elevated flyover interchange anchored strictly to @image3: four curving concrete ramps stacked between high-rise towers, acid green neon along the tower faces, wet road. Then under the flyover exactly as @image4: concrete pillars stretching away, green neon strips, puddles, the red lantern on a closed noodle stall. Preserve layout exactly.
+
+CAMERA
+16:9, 24fps. Fast-cut montage. Multiple editorial shots per beat, wide against macro, tracking against static. Camera sharp and intentional. No long floaty movement. I am cutting this myself in the edit: load extra coverage, aggressive angles and options. Do not make a finished ad. No music.
+
+SEQUENCE
+[0s–3s] High aerial @image3: the lime Evo @image2 drifts the full curve of the top ramp, a long smoke trail following the loop. Sound: engine echoing off the towers, tyre howl.
+[3s–6s] Bonnet cam: the carbon bonnet in the foreground, the ramp barrier sweeping past inches away, towers tilting through the windscreen. Sound: wind roar, revs bouncing off the limiter.
+[6s–9s] ECU wing @image5: the swan-neck GT wing shaking with the body, neon streaks across it. Insert: her hand slams a gear. Sound: gear clunk, turbo whistle.
+[9s–12s] Under the flyover @image4, low static between two pillars: the Evo blasts past the lens flat out, puddle water exploding at the camera. Sound: doppler engine roar, water slap.
+[12s–15s] Rear tracking along the pillars, green strips strobing over the paint, the red lantern swinging as she passes. Sound: engine pull fading into the concrete echo.
+
+STYLE PROMPT
+Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. 16:9, 15 seconds, 24fps. No music. Diegetic sound only. Face stable throughout, no deformation.
+
+NEGATIVE PROMPTS
+extra cars, second driver, extra people in the car, melted wheels, extra fingers, floaty camera drift, on-screen text, readable signage</pre><button class="copy">Copy prompt</button></article><article class="sheet"><header><b>M5</b><span>Tag</span></header>
+  <dl><dt>Refs</dt><dd>@image1 = S01 · @image2 = S04 · @image3 = S15 · @image4 = S02</dd></dl>
+  <pre>SHOT: Tag. The rooftop car park at grey dawn above the neon city; the engine ticks, she leans on the car.
+REFERENCES: @image1 is the character sheet. @image2 is the car four-angle sheet. @image3 is the rooftop car park. @image4 is the head sheet.
+
+CHARACTER @image1
+A woman in her late twenties, pale skin, shoulder-length acid-lime green hair with a dark brown straight-cut fringe and dark roots, heavy spiky lashes, sharp black winged liner, two small silver spike piercings either side of the lower lip, a silver septum ring, long coffin-shaped acid lime green acrylic nails. Oversized boxy white tee with a black tribal flame graphic across the chest, baggy black cargo pants pooling over chunky black and lime skate sneakers, a thin silver chain, silver rings. Psychology: bored, certain, quietly amused. Acting intent: one unhurried movement per beat, a slow half-smile, never performs for the lens except through the mirror. Face locked, face stable throughout, no deformation. Clothing locked exactly as @image1.
+
+VEHICLE @image2
+A Mitsubishi Lancer Evolution IX in bright acid lime green, black carbon vented bonnet, deep black front splitter with canards, widebody fender flares, tall swan-neck GT wing with black uprights, black deep-dish multi-spoke wheels, gold brake calipers, black rear diffuser, dark tinted windows, slammed stance, a red three-diamond emblem on the grille and boot lid, blank plates, no lettering, exactly as @image2. Only ever one car.
+
+SETTING @image3
+Open rooftop car park at blue-grey dawn anchored strictly to @image3: the neon city skyline below, painted bay lines, low concrete wall with a steel rail, the green vending machine, the red lantern on the stairwell door. Preserve layout exactly.
+
+CAMERA
+16:9, 24fps. Fast-cut montage. Multiple editorial shots per beat, wide against macro, tracking against static. Camera sharp and intentional. No long floaty movement. I am cutting this myself in the edit: load extra coverage, aggressive angles and options. Do not make a finished ad. No music.
+
+SEQUENCE
+[0s–3s] Wide @image3: the Evo @image2 slides one last slow arc across the empty roof and stops broadside to the skyline, a thin smoke trail drifting off. Sound: tyre scrub, engine settling.
+[3s–6s] ECU exhaust: heat haze, a last pop. ECU wheel: steam lifting off the black wheel. Sound: exhaust tick, cooling metal ticks.
+[6s–9s] The driver door opens; her sneaker hits the concrete, she steps out and leans on the lime wing. Sound: door creak, sneaker scuff, wind.
+[9s–12s] Close on her face @image4, the grey sky behind, she looks out at the city, a slow half-smile. Sound: distant city hum, a far-off siren.
+[12s–15s] Wide from behind: she and the car small against the waking skyline, the neon below fading as dawn comes up. Sound: wind, the engine ticking.
+
+STYLE PROMPT
+Classic animation aesthetic, painterly illustration, bold variable-weight ink outlines, rich flat cel shading, clean graphic shadow shapes, visible brush texture, neon night palette of acid lime and toxic green light, deep jade-black shadows and a few red lantern accents, dynamic editorial energy. 16:9, 15 seconds, 24fps. No music. Diegetic sound only. Face stable throughout, no deformation.
+
+NEGATIVE PROMPTS
+extra cars, second driver, extra people in the car, melted wheels, extra fingers, floaty camera drift, on-screen text, readable signage</pre><button class="copy">Copy prompt</button></article></div></section>
+</main>
+<script>
+document.querySelectorAll("button.copy").forEach(b=>b.addEventListener("click",()=>{const t=b.previousElementSibling.textContent;
+const ok=()=>{b.textContent="Copied";setTimeout(()=>b.textContent="Copy prompt",1400)};
+navigator.clipboard.writeText(t).then(ok).catch(()=>{const s=getSelection(),g=document.createRange();g.selectNodeContents(b.previousElementSibling);s.removeAllRanges();s.addRange(g);b.textContent="Selected, press copy"})}));
+document.querySelectorAll(".done input").forEach(c=>{const k="green_age:"+c.id;try{c.checked=localStorage.getItem(k)==="1"}catch(e){}
+c.addEventListener("change",()=>{try{localStorage.setItem(k,c.checked?"1":"0")}catch(e){}})});
+</script>
+</body></html>
